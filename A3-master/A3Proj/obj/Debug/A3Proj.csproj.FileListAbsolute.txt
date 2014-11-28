@@ -1,0 +1,29 @@
+C:\Users\Joshua\Documents\Notes\School\COMP_3020_HCI\A3\A3Proj\bin\Debug\A3Proj.exe.config
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\bin\Debug\A3Proj.exe.config
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\bin\Debug\A3Proj.exe
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\bin\Debug\A3Proj.pdb
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\obj\Debug\A3Proj.csprojResolveAssemblyReference.cache
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\obj\Debug\A3Proj.Form1.resources
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\obj\Debug\A3Proj.Properties.Resources.resources
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\obj\Debug\A3Proj.csproj.GenerateResource.Cache
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\obj\Debug\A3Proj.exe
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3Proj\obj\Debug\A3Proj.pdb
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\bin\Debug\A3Proj.exe.config
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\obj\Debug\A3Proj.exe
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\obj\Debug\A3Proj.pdb
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\bin\Debug\A3Proj.exe
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\bin\Debug\A3Proj.pdb
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\obj\Debug\A3Proj.csprojResolveAssemblyReference.cache
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\obj\Debug\A3Proj.Form1.resources
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\obj\Debug\A3Proj.Properties.Resources.resources
+\\plutonium\undergrad\umlemerj\Profile\My Documents\3020\A3\A3\A3Proj\obj\Debug\A3Proj.csproj.GenerateResource.Cache
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\bin\Debug\A3Proj.exe.config
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\obj\Debug\A3Proj.exe
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\obj\Debug\A3Proj.pdb
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\bin\Debug\A3Proj.exe
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\bin\Debug\A3Proj.pdb
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\obj\Debug\A3Proj.csprojResolveAssemblyReference.cache
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\obj\Debug\A3Proj.Form1.resources
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\obj\Debug\A3Proj.Properties.Resources.resources
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\obj\Debug\A3Proj.csproj.GenerateResource.Cache
+C:\Users\Joshua\Documents\GitHub\A3\A3-master\A3Proj\obj\Debug\A3Proj.MovieBox.resources
