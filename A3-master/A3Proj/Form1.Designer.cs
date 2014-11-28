@@ -85,7 +85,6 @@
             this.tabPage1.Size = new System.Drawing.Size(957, 543);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
@@ -167,7 +166,6 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 19);
             this.checkedListBox1.TabIndex = 13;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -178,7 +176,6 @@
             this.label6.Size = new System.Drawing.Size(48, 17);
             this.label6.TabIndex = 10;
             this.label6.Text = "Actors";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -232,7 +229,6 @@
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "From";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -243,7 +239,6 @@
             this.label1.Size = new System.Drawing.Size(94, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Release Year";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // numericUpDown2
             // 
@@ -266,7 +261,6 @@
             this.textBox1.Size = new System.Drawing.Size(158, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Search";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tabPage3
             // 
