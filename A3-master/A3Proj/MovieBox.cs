@@ -17,7 +17,8 @@ namespace A3Proj {
             InitializeComponent();
         }
 
-        public MovieBox(Movie movie):this() {
+        public MovieBox(Movie movie)
+            : this() {
             this.movie = movie;
             this.labelMovieTitle.Text = movie.getTitle();
             this.labelMovieYear.Text = movie.getYear().ToString();

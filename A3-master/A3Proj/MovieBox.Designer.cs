@@ -46,7 +46,7 @@
             this.movieImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("movieImage.BackgroundImage")));
             this.movieImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.movieImage.Location = new System.Drawing.Point(2, 2);
-            this.movieImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.movieImage.Margin = new System.Windows.Forms.Padding(2);
             this.movieImage.Name = "movieImage";
             this.movieImage.Size = new System.Drawing.Size(140, 161);
             this.movieImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,7 +72,7 @@
             this.Controls.Add(this.labelMovieYear);
             this.Controls.Add(this.movieImage);
             this.Controls.Add(this.labelMovieTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MovieBox";
             this.Size = new System.Drawing.Size(143, 224);
             ((System.ComponentModel.ISupportInitialize)(this.movieImage)).EndInit();

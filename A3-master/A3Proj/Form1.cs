@@ -28,6 +28,46 @@ namespace A3Proj {
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveDataToXML() {
+            XDocument xdoc = new XDocument(new XElement("movie"));
+            //TODO...the rest
+        }
+
         /*
          *  Populate the current page with the relevant movie data.
          */
@@ -44,7 +84,7 @@ namespace A3Proj {
 
         private void loadXML() {
             if (System.IO.File.Exists(FILE_NAME)) {
-                XDocument xmlSource = XDocument.Load("movies.xml");
+                XDocument xmlSource = XDocument.Load(FILE_NAME);
                 IEnumerable<XElement> items = xmlSource.Descendants("movie");
                 List<Movie> movieList = new List<Movie>();
                 foreach (var p in items) {
@@ -105,12 +145,5 @@ namespace A3Proj {
             //Do something with data, like populate a table
         }//loadXML
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e) {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e) {
-
-        }
     }
 }
