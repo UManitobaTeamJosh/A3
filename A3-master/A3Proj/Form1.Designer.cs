@@ -24,38 +24,57 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.saveButton = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ContentParentTable = new System.Windows.Forms.TableLayoutPanel();
+            this.movieFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.ContentParentTable = new System.Windows.Forms.TableLayoutPanel();
-            this.movieFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.releaseFromControl = new System.Windows.Forms.NumericUpDown();
+            this.releaseToControl = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lengthFromControl = new System.Windows.Forms.NumericUpDown();
+            this.lengthToControl = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.navButtonPrev = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pageSelectionBox = new System.Windows.Forms.TextBox();
+            this.labelPageOutOf = new System.Windows.Forms.Label();
+            this.navButtonNext = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
             this.Tabs.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.ContentParentTable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.releaseFromControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.releaseToControl)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lengthFromControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lengthToControl)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tabs
@@ -79,12 +98,23 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Silver;
+            this.tabPage1.Controls.Add(this.saveButton);
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(957, 543);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(43, 33);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 0;
+            this.saveButton.Text = "save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // tabPage2
             // 
@@ -98,169 +128,29 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Movies";
             // 
-            // panel1
+            // ContentParentTable
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.checkedListBox1);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.flowLayoutPanel1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.numericUpDown2);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(167, 537);
-            this.panel1.TabIndex = 0;
+            this.ContentParentTable.ColumnCount = 1;
+            this.ContentParentTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.ContentParentTable.Controls.Add(this.movieFlowPanel, 0, 1);
+            this.ContentParentTable.Controls.Add(this.panel2, 0, 0);
+            this.ContentParentTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContentParentTable.Location = new System.Drawing.Point(170, 3);
+            this.ContentParentTable.Name = "ContentParentTable";
+            this.ContentParentTable.RowCount = 2;
+            this.ContentParentTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.26257F));
+            this.ContentParentTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.73743F));
+            this.ContentParentTable.Size = new System.Drawing.Size(784, 537);
+            this.ContentParentTable.TabIndex = 1;
             // 
-            // label7
+            // movieFlowPanel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 412);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 17);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Shortlist";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(14, 442);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 16;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(80, 312);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(61, 24);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(13, 312);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 24);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(14, 342);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 19);
-            this.checkedListBox1.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(8, 292);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Actors";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 231);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 17);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Genre";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(8, 251);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 139);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(137, 75);
-            this.flowLayoutPanel1.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 118);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Tags";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "To";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "From";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Release Year";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(87, 67);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(64, 20);
-            this.numericUpDown2.TabIndex = 2;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(8, 67);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(64, 20);
-            this.numericUpDown1.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Search";
+            this.movieFlowPanel.AutoScroll = true;
+            this.movieFlowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.movieFlowPanel.Location = new System.Drawing.Point(3, 42);
+            this.movieFlowPanel.Name = "movieFlowPanel";
+            this.movieFlowPanel.Size = new System.Drawing.Size(778, 492);
+            this.movieFlowPanel.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -302,28 +192,309 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Settings";
             // 
-            // ContentParentTable
+            // searchTextBox
             // 
-            this.ContentParentTable.ColumnCount = 1;
-            this.ContentParentTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.ContentParentTable.Controls.Add(this.movieFlowPanel, 0, 1);
-            this.ContentParentTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentParentTable.Location = new System.Drawing.Point(170, 3);
-            this.ContentParentTable.Name = "ContentParentTable";
-            this.ContentParentTable.RowCount = 2;
-            this.ContentParentTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.26257F));
-            this.ContentParentTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.73743F));
-            this.ContentParentTable.Size = new System.Drawing.Size(784, 537);
-            this.ContentParentTable.TabIndex = 1;
+            this.searchTextBox.Location = new System.Drawing.Point(6, 44);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(158, 20);
+            this.searchTextBox.TabIndex = 0;
             // 
-            // movieFlowPanel
+            // releaseFromControl
             // 
-            this.movieFlowPanel.AutoScroll = true;
-            this.movieFlowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.movieFlowPanel.Location = new System.Drawing.Point(3, 42);
-            this.movieFlowPanel.Name = "movieFlowPanel";
-            this.movieFlowPanel.Size = new System.Drawing.Size(778, 492);
-            this.movieFlowPanel.TabIndex = 0;
+            this.releaseFromControl.Location = new System.Drawing.Point(8, 87);
+            this.releaseFromControl.Maximum = new decimal(new int[] {
+            2014,
+            0,
+            0,
+            0});
+            this.releaseFromControl.Name = "releaseFromControl";
+            this.releaseFromControl.Size = new System.Drawing.Size(64, 20);
+            this.releaseFromControl.TabIndex = 1;
+            // 
+            // releaseToControl
+            // 
+            this.releaseToControl.Location = new System.Drawing.Point(87, 87);
+            this.releaseToControl.Maximum = new decimal(new int[] {
+            2014,
+            0,
+            0,
+            0});
+            this.releaseToControl.Name = "releaseToControl";
+            this.releaseToControl.Size = new System.Drawing.Size(64, 20);
+            this.releaseToControl.TabIndex = 2;
+            this.releaseToControl.Value = new decimal(new int[] {
+            2014,
+            0,
+            0,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Release Year";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "From";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(84, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "To";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(8, 251);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(5, 231);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Genre";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(8, 292);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 17);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Actors";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(14, 342);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 19);
+            this.checkedListBox1.TabIndex = 13;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 312);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 24);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(80, 312);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(61, 24);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(14, 442);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(11, 412);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 17);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Shortlist";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.buttonSearch);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.lengthToControl);
+            this.panel1.Controls.Add(this.lengthFromControl);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.listBox1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.checkedListBox1);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.releaseToControl);
+            this.panel1.Controls.Add(this.releaseFromControl);
+            this.panel1.Controls.Add(this.searchTextBox);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(167, 537);
+            this.panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Length";
+            // 
+            // lengthFromControl
+            // 
+            this.lengthFromControl.Location = new System.Drawing.Point(6, 147);
+            this.lengthFromControl.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.lengthFromControl.Name = "lengthFromControl";
+            this.lengthFromControl.Size = new System.Drawing.Size(64, 20);
+            this.lengthFromControl.TabIndex = 19;
+            // 
+            // lengthToControl
+            // 
+            this.lengthToControl.Location = new System.Drawing.Point(87, 147);
+            this.lengthToControl.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.lengthToControl.Name = "lengthToControl";
+            this.lengthToControl.Size = new System.Drawing.Size(64, 20);
+            this.lengthToControl.TabIndex = 20;
+            this.lengthToControl.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(11, 170);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(30, 13);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "From";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(84, 170);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(20, 13);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "To";
+            // 
+            // buttonSearch
+            // 
+            this.buttonSearch.Location = new System.Drawing.Point(42, 15);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearch.TabIndex = 23;
+            this.buttonSearch.Text = "Search";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(778, 33);
+            this.panel2.TabIndex = 1;
+            // 
+            // navButtonPrev
+            // 
+            this.navButtonPrev.Location = new System.Drawing.Point(188, 1);
+            this.navButtonPrev.Name = "navButtonPrev";
+            this.navButtonPrev.Size = new System.Drawing.Size(34, 23);
+            this.navButtonPrev.TabIndex = 2;
+            this.navButtonPrev.Text = "<";
+            this.toolTip1.SetToolTip(this.navButtonPrev, "Previous page");
+            this.navButtonPrev.UseVisualStyleBackColor = true;
+            this.navButtonPrev.Click += new System.EventHandler(this.navButtonPrev_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(4, 8);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Page #";
+            // 
+            // pageSelectionBox
+            // 
+            this.pageSelectionBox.Location = new System.Drawing.Point(52, 5);
+            this.pageSelectionBox.Name = "pageSelectionBox";
+            this.pageSelectionBox.Size = new System.Drawing.Size(44, 20);
+            this.pageSelectionBox.TabIndex = 4;
+            this.pageSelectionBox.Text = "1";
+            this.pageSelectionBox.TextChanged += new System.EventHandler(this.pageSelectionBox_TextChanged);
+            this.pageSelectionBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pageSelectionBox_KeyPress);
+            // 
+            // labelPageOutOf
+            // 
+            this.labelPageOutOf.AutoSize = true;
+            this.labelPageOutOf.Location = new System.Drawing.Point(102, 8);
+            this.labelPageOutOf.Name = "labelPageOutOf";
+            this.labelPageOutOf.Size = new System.Drawing.Size(34, 13);
+            this.labelPageOutOf.TabIndex = 5;
+            this.labelPageOutOf.Text = "out of";
+            // 
+            // navButtonNext
+            // 
+            this.navButtonNext.Location = new System.Drawing.Point(228, 1);
+            this.navButtonNext.Name = "navButtonNext";
+            this.navButtonNext.Size = new System.Drawing.Size(34, 23);
+            this.navButtonNext.TabIndex = 6;
+            this.navButtonNext.Text = ">";
+            this.toolTip1.SetToolTip(this.navButtonNext, "Next page");
+            this.navButtonNext.UseVisualStyleBackColor = true;
+            this.navButtonNext.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.navButtonNext);
+            this.panel3.Controls.Add(this.navButtonPrev);
+            this.panel3.Controls.Add(this.labelPageOutOf);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.pageSelectionBox);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(513, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(265, 33);
+            this.panel3.TabIndex = 7;
             // 
             // Form1
             // 
@@ -335,12 +506,18 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Tabs.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.ContentParentTable.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.releaseFromControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.releaseToControl)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.ContentParentTable.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lengthFromControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lengthToControl)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -354,25 +531,38 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TableLayoutPanel ContentParentTable;
+        private System.Windows.Forms.FlowLayoutPanel movieFlowPanel;
+        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.NumericUpDown lengthToControl;
+        private System.Windows.Forms.NumericUpDown lengthFromControl;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TableLayoutPanel ContentParentTable;
-        private System.Windows.Forms.FlowLayoutPanel movieFlowPanel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown releaseToControl;
+        private System.Windows.Forms.NumericUpDown releaseFromControl;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button navButtonNext;
+        private System.Windows.Forms.Label labelPageOutOf;
+        private System.Windows.Forms.TextBox pageSelectionBox;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button navButtonPrev;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

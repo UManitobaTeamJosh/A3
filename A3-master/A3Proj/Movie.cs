@@ -9,13 +9,13 @@ namespace A3Proj {
 
         private String title;
         private int year;
-        private String length;
+        private int length;
         private String director;
         private int rating;
         private List<String> genreList;
         private List<String> actorList;
 
-        public Movie(String title, int year, String length, String director,
+        public Movie(String title, int year, int length, String director,
             int rating, List<String> genreList, List<String> actorList) {
             this.title = title;
             this.year = year;
@@ -47,7 +47,7 @@ namespace A3Proj {
         //Accessors
         public String getTitle() { return title; }
         public int getYear() { return year; }
-        public String getLength() { return length; }
+        public int getLength() { return length; }
         public String getDirector() { return director; }
         public int getRating() { return rating; }
         public String[] getGenres() { return genreList.ToArray(); }
