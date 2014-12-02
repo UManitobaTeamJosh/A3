@@ -26,6 +26,28 @@ namespace A3Proj {
             this.actorList = actorList;
         }
 
+        public bool containsGenre(String genreQuery) {
+            bool output = false;
+            output = genreList.Contains(genreQuery);
+            return output;
+        }
+
+        /*
+         *  Returns true if there exists at least one genre in the parameter, genreCollection
+         *  that exists in this movie's genreList.
+         */
+        public bool genreMatch(ICollection<string> genreCollection) {
+            bool output = false;
+            foreach (string genreQuery in genreCollection) {
+                foreach (string genre in genreList) {
+                    if (genre.Equals(genreQuery)) {
+                        return true;
+                    }
+                }
+            }
+            return output;
+        }
+
         /*
          *  Changes the rating of the movie. 
          *  A valid movie rating is

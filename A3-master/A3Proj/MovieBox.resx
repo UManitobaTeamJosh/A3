@@ -121,7 +121,7 @@
   <data name="movieImage.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AABKtSURBVHhe7dbNmeS4mUXhMUYGjDuzkRNj39imEdU6anbW
+        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AABKtSURBVHhe7dbNmeS4mUXhMUYGjDuzkRNj39imEdU6anbW
         qcz4IRkAeBbvpvKCQeAD71P/9d//87d/JMkMKqwk06iwkkyjwkoyjQoryTQqrCTTqLCSTOOpwvrf//t7
         kpzCOuerp/+HZT+UJO+wrjFaWD894OuPJcmrrGN+57eF9dOD9j+YJK+wbvnOt4X10wP3uSR5hnXKT34s
         rJ8e/DWbJD+xLnnEQ4X10w9YPkmMdQh++vvDhbWxLCyfJHvWHXgk81RhbSwPyyfJxjoDj+aeLqyNrYHl
@@ -204,4 +204,10 @@
         lWQSf/vH/wNTW+cnF24piwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>114, 17</value>
+  </metadata>
 </root>

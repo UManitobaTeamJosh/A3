@@ -11,8 +11,9 @@ using System.Xml.Linq;
 using System.Xml;
 
 /*
- *  TODO Put nav in panel and set that panel to dock right
- *  TODO Restrict pageSelectionBox to numbers only. Entering a number > moviePageList.Count sets the box to moviePageList.Count
+ *  TODO Movie info form.
+ *  TODO MovieBox contextmenustrip events (corresponding to MovieInfoForm)
+ *  
  */
 namespace A3Proj {
     public partial class Form1 : Form {
@@ -28,7 +29,6 @@ namespace A3Proj {
             loadXML();
             performSearch();
         }
-
         
         /*
          *  Saves the contents of movieList to an XML document. Should the the same file
@@ -88,9 +88,23 @@ namespace A3Proj {
         private List<List<Movie>> produceQuery(String searchQuery, int yearFrom, int yearTo, int lengthFrom, int lengthTo) {
             List<List<Movie>> pageList = new List<List<Movie>>();
             List<Movie> page = new List<Movie>();
+
+            //Get the selected genres
+            List<string> selectedGenreList = new List<string>();
+            foreach (Object item in genreCheckedList.CheckedItems) {
+                selectedGenreList.Add(item.ToString());
+            }
+            /*
+            Console.WriteLine("--Genres Selected--");
+            foreach (string word in selectedGenreList) {
+                Console.WriteLine(word);
+            }
+            */
             //Quick 'n' dirty implementation, itereate through each movie in the database.
             foreach (Movie movie in movieList) {
-                if (movie.getYear() >= yearFrom && movie.getYear() <= yearTo && movie.getLength() >= lengthFrom && movie.getLength() <= lengthTo) {
+                if (movie.getYear() >= yearFrom && movie.getYear() <= yearTo 
+                    && movie.getLength() >= lengthFrom && movie.getLength() <= lengthTo
+                    && movie.genreMatch(selectedGenreList)) {
                     if (!String.IsNullOrWhiteSpace(searchQuery) && movie.getTitle().Contains(searchQuery)) {
                         page.Add(movie);
                     } else if(String.IsNullOrWhiteSpace(searchQuery)){
@@ -246,6 +260,10 @@ namespace A3Proj {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
                 e.Handled = true;
             }
+        }
+
+        //TODO Remove
+        private void genreCheckedList_ItemCheck(object sender, ItemCheckEventArgs e) {
         }
 
     }
