@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace A3Proj {
+    /*
+     * TODO Use auto ellipsize instead of manual code
+     */
     public partial class MovieBox : UserControl {
 
         private static readonly int ELLIPSIZE_LIMIT = 22;
